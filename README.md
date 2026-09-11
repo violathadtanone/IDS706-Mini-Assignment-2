@@ -142,9 +142,9 @@ evcxr_jupyter --install
 - Machine learning was used to explore a relationship between `'Daily Steps'` and `'Sleep Duration'`, where tree-based models demonstrated good performance as compared to basic linear regression.
 - The model was later improved by adding `'Age'` variable and incorporating Gradient Boosting Model, which works well with non-linear model. 
 - The final results showed that all three models perform well, with Random Forest performing best (R² = 0.919, RMSE = 0.225), indicating slightly higher predictive accuracy than Gradient Boosting and Decision Tree.
-Adding 'Age' substantially improved model performance, with R² increasing from 0.74 to 0.91 and RMSE decreasing from 0.45 to 0.23 for the Decision Tree model. This suggests that 'Age' was a highly informative predictor of the target variable.
+- Adding 'Age' substantially improved model performance. For Decision Tree model, R² increased from 0.74 to 0.91, while RMSE decreased from 0.45 to 0.23, while for Random Forest model, R² increased from 0.71 to 0.92, while RMSE decreased from 0.47 to 0.23. 
 
-![Machine Learning Scenario 2](Image/ML_Scenario2.png)
+![Machine Learning Scenario 2](Image/ML_scenario2.png)
 
 ## Pandas vs Polars Performance
 - Polars was faster than Pandas for the data analysis section (1.00s vs. 1.21s), but slower for the machine learning section (1.69s vs. 1.35s). 
