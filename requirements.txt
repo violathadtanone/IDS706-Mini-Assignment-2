@@ -2,4 +2,3 @@ pandas
 polars
 scikit-learn
 matplotlib
-statsmodels
