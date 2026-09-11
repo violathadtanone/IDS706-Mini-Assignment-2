@@ -153,4 +153,4 @@ Adding 'Age' substantially improved model performance, with R² increasing from 
 ![Pandas vs Polars](Image/pandas_vs_polars.png)
 
 ## Rust Exploration
-- Further details on experimentation with Rust can be found from https://github.com/violathadtanone/IDS706-Mini-Assignment-2/blob/main/rust_vs_python.ipynb
+- Further details on experimentation with Rust can be found from https://github.com/violathadtanone/IDS706-Mini-Assignment-2/blob/main/rust_vs_python_intro.ipynb
