@@ -144,7 +144,7 @@ evcxr_jupyter --install
 - The final results showed that all three models perform well, with Random Forest performing best (R² = 0.919, RMSE = 0.225), indicating slightly higher predictive accuracy than Gradient Boosting and Decision Tree.
 - Adding 'Age' substantially improved model performance. For Decision Tree model, R² increased from 0.74 to 0.91, while RMSE decreased from 0.45 to 0.23, while for Random Forest model, R² increased from 0.71 to 0.92, while RMSE decreased from 0.47 to 0.23. 
 
-![Machine Learning Scenario 2](Image/ML_scenario2.png)
+![Machine Learning Scenario 2](Image/machine_s2.png)
 
 ## Pandas vs Polars Performance
 - Polars was faster than Pandas for the data analysis section (1.00s vs. 1.21s), but slower for the machine learning section (1.69s vs. 1.35s). 
