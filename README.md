@@ -147,7 +147,7 @@ evcxr_jupyter --install
 ![Machine Learning Scenario 2](Image/machine_s2.png)
 
 ## Pandas vs Polars Performance
-- Polars was faster than Pandas for the data analysis section (1.00s vs. 1.21s), but slower for the machine learning section (1.69s vs. 1.35s). 
+- Polars was slightly faster than Pandas for the data analysis section (0.68s vs. 0.7s), but slower for the machine learning section (0.95s vs. 0.76s).
 - Overall, this partially aligned with the general consensus that Polars can outperform Pandas, particularly for data manipulation, but Polars’ performance depends on the type of task, and it may not be faster when using tools like scikit-learn.
 
 ![Pandas vs Polars](Image/pandas_vs_polars.png)
