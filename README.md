@@ -1,18 +1,18 @@
 # IDS 706 Mini Assignment 2: Start Your First Data Analysis - 10 Sep 2026
 
 ## Project Description
-This is the 2nd mini assignment under IDS 706 with the purpose for data analysis. The first part covers the usage of pandas and polars with common data manipulation and visualisation. The latter part of this assignment covers experimentation with Rust on Jupyter notebook.
+This is the 2nd mini assignment under IDS 706 with the purpose for data analysis. The first part covers the usage of pandas and polars with common data manipulation and visualisation. The latter part of this assignment covers experimentation with Rust on Jupyter notebook from the provided Rust template.
 
 
 ## Project Structure 
 ```bash
 IDS706-Mini-Assignment-2
 ├── .gitignore
-├── requirements.txt         # List of packages required for installation
-├── analysis_query.ipynb     # Jupyter Notebook for Data Analysis
-├── rust_exploration.ipynb   # Jupyter Notebook for Rust Exploration
-├── Images/                  # Images used for supporting README.md explantion
-└── README.md                # Project documentation
+├── requirements.txt            # List of packages required for installation
+├── analysis_query.ipynb        # Jupyter Notebook for Data Analysis
+├── rust_vs_python_intro.ipynb  # Jupyter Notebook for Rust Exploration based on the provide template
+├── Images/                     # Images used for supporting README.md explantion
+└── README.md                   # Project documentation
 ```
 
 ## Dataset Description 
@@ -108,20 +108,16 @@ cargo --version
 <br><br>
 
 ### 2. Rust Jupyter kernel
-- Upon successful installation in terminal, this should return as "Installation complete".
+- Upon successful installation of the code below in terminal, this should return as "Installation complete".
  ```bash
 cargo install evcxr_jupyter
 evcxr_jupyter --install
 ```
-<br><br>
-
-### 3. Create new Jupyter Notebook file for Rust
-- Create a new file called `rust_analysis_query.ipynb`.
 - Select `Rust` as the kernel. If this does not appear, save the existing works and `⌘ + SHIFT + P` then choose `> Developer: Reload Window`.
 <br><br>
 
 ## Key Highlights from Data Analysis Results
-- More details of analysis conducted can be found in https://github.com/violathadtanone/IDS706-Mini-Assignment-2/blob/main/analysis_query.ipynb
+- Further details of analysis conducted can be found in https://github.com/violathadtanone/IDS706-Mini-Assignment-2/blob/main/analysis_query.ipynb
 
 ### Gender vs Sleep Duration
 
@@ -157,4 +153,4 @@ Adding 'Age' substantially improved model performance, with R² increasing from 
 ![Pandas vs Polars](Image/pandas_vs_polars.png)
 
 ## Rust Exploration
-- Further details on experimentation with Rust can be found from https://github.com/violathadtanone/IDS706-Mini-Assignment-2/blob/main/rust_exploration.ipynb
+- Further details on experimentation with Rust can be found from https://github.com/violathadtanone/IDS706-Mini-Assignment-2/blob/main/rust_vs_python.ipynb
