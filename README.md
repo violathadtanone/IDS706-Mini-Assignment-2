@@ -155,3 +155,6 @@ Adding 'Age' substantially improved model performance, with R² increasing from 
 - Overall, this partially aligned with the general consensus that Polars can outperform Pandas, particularly for data manipulation, but Polars’ performance depends on the type of task, and it may not be faster when using tools like scikit-learn.
 
 ![Pandas vs Polars](Image/pandas_vs_polars.png)
+
+## Rust Exploration
+- Further details on experimentation with Rust can be found from https://github.com/violathadtanone/IDS706-Mini-Assignment-2/blob/main/rust_exploration.ipynb
