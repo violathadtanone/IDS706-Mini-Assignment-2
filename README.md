@@ -121,9 +121,9 @@ evcxr_jupyter --install
 
 ### Gender vs Sleep Duration
 
-- In our small samples of 374 observations, we found that female individuals on average slept slightly longer than male, which aligned with the existing research (see https://pmc.ncbi.nlm.nih.gov/articles/PMC4164903/).
+- In our small samples of 374 observations, we found that female individuals on average slept slightly longer than male, which aligned with the existing US-based research (see https://pmc.ncbi.nlm.nih.gov/articles/PMC4164903/).
 - It appeared that female from our dataset slept around 7.23 hours per day, while it was around 7.04 hours per day for male. 
-- Because the dataset does not provide sufficient information on the participants’ health status, it is difficult to determine whether the observed difference in sleep duration is associated with gender or other underlying characteristics.
+- Because the dataset does not provide sufficient information on the participants’ health status, it is also difficult to determine whether the observed difference in sleep duration is associated with gender or other underlying characteristics.
 
 ![Sleep Duration by Gender](Image/gender_vs_sleep.png)
 
