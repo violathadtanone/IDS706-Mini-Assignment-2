@@ -1,7 +1,7 @@
 # IDS 706 Mini Assignment 2: Start Your First Data Analysis - 10 Sep 2026
 
 ## Project Description
-This is the 2nd mini assignment under IDS 706 with the purpose for data analysis. The first part will cover the usage of pandas and polars with common data manipulation and visualisation. The latter part of this assignment will cover experimentation with Rust on Jupyter notebook.
+This is the 2nd mini assignment under IDS 706 with the purpose for data analysis. The first part covers the usage of pandas and polars with common data manipulation and visualisation. The latter part of this assignment covers experimentation with Rust on Jupyter notebook.
 
 
 ## Project Structure 
@@ -16,7 +16,7 @@ IDS706-Mini-Assignment-2
 ```
 
 ## Dataset Description 
-The dataset uses for this assignment is Sleep_health_and_lifestyle_dataset.csv from Kaggle. It covers a wide range of variables related to sleep and daily habits such as gender, age, occupation, sleep duration, quality of sleep, and the presence or absence of sleep disorders. This can be download from: https://www.kaggle.com/datasets/uom190346a/sleep-health-and-lifestyle-dataset
+The dataset uses for this assignment is Sleep_health_and_lifestyle_dataset.csv from Kaggle. It includes a wide range of variables related to sleep and daily habits such as gender, age, occupation, sleep duration, quality of sleep, and the presence or absence of sleep disorders. It can be download from: https://www.kaggle.com/datasets/uom190346a/sleep-health-and-lifestyle-dataset
 
 
 ## Overall Setup Instructions
@@ -121,21 +121,21 @@ evcxr_jupyter --install
 <br><br>
 
 ## Key Highlights from Data Analysis Results
-- More details of analysis conducted can be found in [].
+- More details of analysis conducted can be found in https://github.com/violathadtanone/IDS706-Mini-Assignment-2/blob/main/analysis_query.ipynb
 
 ### Gender vs Sleep Duration
 
 - In our small samples of 374 observations, we found that female individuals on average slept slightly longer than male, which aligned with the existing research (see https://pmc.ncbi.nlm.nih.gov/articles/PMC4164903/).
 - It appeared that female from our dataset slept around 7.23 hours per day, while it was around 7.04 hours per day for male. 
-- However, because the dataset does not provide sufficient information on the participants’ health status, it is difficult to determine whether the observed difference in sleep duration is associated with gender or other underlying characteristics.
+- Because the dataset does not provide sufficient information on the participants’ health status, it is difficult to determine whether the observed difference in sleep duration is associated with gender or other underlying characteristics.
 
 ![Sleep Duration by Gender](Image/gender_vs_sleep.png)
 
 ### Sleep Duration in Female
-- To further explore this pattern, we created a subset containing only 185 female samples to examine whether the relationships observed in the overall dataset persisted within this group.
-- For Age, the dataset showed a clear trend that female, who was betwebetween 51 - 60 years old tend to sleep longer.
+- To further explore this pattern, we created a subset containing only 185 women to examine whether the relationships observed in the overall dataset persisted within the female group.
+- For `'Age'`, the dataset showed a clear trend that female participants between 51 and 60 years old tended to sleep longer.
 
-- For Daily Step Level, it has been initially hypothesized that the more steps female take per day, the longer her daily sleep duration. Nevertheless, the barchart diagram came back with surprising results, where female with lower daily steps tend to have longer duration of sleep at 7.84 hours. Hence we proceeded to perform multiple regression models to understand further of such perplex relationship.
+- For `'Daily Step Level'`, it has been initially hypothesized that the more steps female take per day, the longer her daily sleep duration. Nevertheless, the barchart diagram came back with surprising results, where female individuals with lower daily steps tended to have longer duration of sleep at 7.84 hours. Hence we proceeded to perform multiple regression models to understand further of such perplex relationship.
 
 <p align="center">
   <img src="Image/female_vs_age.png" width="45%">
@@ -146,13 +146,12 @@ evcxr_jupyter --install
 - Machine learning was used to explore a relationship between `'Daily Steps'` and `'Sleep Duration'`, where tree-based models demonstrated good performance as compared to basic linear regression.
 - The model was later improved by adding `'Age'` variable and incorporating Gradient Boosting Model, which works well with non-linear model. 
 - The final results showed that all three models perform well, with Random Forest performing best (R² = 0.919, RMSE = 0.225), indicating slightly higher predictive accuracy than Gradient Boosting and Decision Tree.
-- Hence adding Age dramatically improves the model performance, with R² increasing from 0.74 to 0.91 for Decision Tree and RMSE decreasing from 0.45 to 0.23. This suggests Age is a highly informative predictor of the target variable.
+Adding 'Age' substantially improved model performance, with R² increasing from 0.74 to 0.91 and RMSE decreasing from 0.45 to 0.23 for the Decision Tree model. This suggests that 'Age' was a highly informative predictor of the target variable.
 
-![Machine Learning Scenario 2](Image/ML_scenario2.png)
+![Machine Learning Scenario 2](Image/ML_Scenario2.png)
 
 ## Pandas vs Polars Performance
 - Polars was faster than Pandas for the data analysis section (1.00s vs. 1.21s), but slower for the machine learning section (1.69s vs. 1.35s). 
-- Overall, this partially aligns with the general consensus that Polars can outperform Pandas, particularly for data manipulation
-- However, the results also show that Polars’ performance depends on the type of task, and it may not be faster when using tools like scikit-learn.
+- Overall, this partially aligned with the general consensus that Polars can outperform Pandas, particularly for data manipulation, but Polars’ performance depends on the type of task, and it may not be faster when using tools like scikit-learn.
 
 ![Pandas vs Polars](Image/pandas_vs_polars.png)
